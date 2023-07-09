@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'State Management',
         home: CounterScreen(),
+        debugShowCheckedModeBanner: false,
       ),
     );
   }
