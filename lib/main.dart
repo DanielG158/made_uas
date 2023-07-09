@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       // buat instance dari Counter
       create: (_) => Counter(),
       child: MaterialApp(
-        title: 'Flutter State Management Example',
+        title: 'State Management',
         home: CounterScreen(),
       ),
     );
@@ -36,10 +36,10 @@ class CounterScreen extends StatelessWidget {
               // menyediakan counter yang dibutuhkan widget
               builder: (context, counter, _) => Text(
                 'Count: ${counter.count}',
-                style: TextStyle(fontSize: 24),
+                style: TextStyle(fontSize: 48),
               ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 24),
             ElevatedButton(
               onPressed: () {
                 // mengakses counter dan memanggil method increment
